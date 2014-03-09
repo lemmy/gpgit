@@ -46,7 +46,8 @@ use MIME::Parser;
 	} elsif( $key =~ /^.+\@.+$/ ){
 	   push @recipients, $key;
 	} else {
-           die "Bad argument: $key\n";
+           print <STDIN>;
+           exit 0;
 	}
      }
      die "Missing recipients\n" unless @recipients;
