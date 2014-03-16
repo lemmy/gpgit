@@ -26,7 +26,7 @@ use Mail::GnuPG;
 use MIME::Parser;
 
 ## Parse args
-  my $encrypt_mode   = 'pgpmime';
+  my $encrypt_mode   = 'inline'; # APG on Android doesn't speak pgpmime
   my $inline_flatten = 0;
   my @recipients     = ();
   {
